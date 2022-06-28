@@ -1,0 +1,9 @@
+--- 
+- hosts: all 
+  become: yes
+  tasks:  
+  -  name: tree install
+     apt: 
+      name: tree 
+      state: present 
+       
