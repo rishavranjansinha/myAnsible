@@ -2,7 +2,12 @@
 - hosts: all 
   become: yes
   tasks: 
-  - name: i want to isntall tree 
-     apt: 
+  - name: i want to install tree
+    apt: 
        name: tree 
        state: present  
+
+  - name: install git 
+    apt: 
+      name: git 
+      state: present      
