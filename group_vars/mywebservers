@@ -1,4 +1,6 @@
+---
 
 myvariable: value
 mywebseverUbuntu: apache2
 mywebserverRedhate: httpd
+mywebserverJava: openjdk-8-jre
