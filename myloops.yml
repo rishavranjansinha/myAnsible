@@ -1,0 +1,14 @@
+--- 
+- hosts: 172.31.11.146
+  become: yes 
+  tasks:
+  - name: i want to ecxcute Multitask 
+    apt: 
+     name: "{{ item }}"
+     state: present 
+    loop:   
+      - git 
+      - tree
+      - wget
+
+      
