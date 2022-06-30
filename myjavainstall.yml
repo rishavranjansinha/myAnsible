@@ -4,12 +4,12 @@
   tasks: 
   - name: install java on node ubuntu
     apt: 
-      name: "{{mywebserverJava}}"
+      name: "{{myjavapackonubuntu}}"
       state: present 
     when: ansible_os_family =="Debian"   
 
-  - name: start mywebserverJava on node side 
-    service: 
-      name: "{{mywebserverJava}}"
-      state: started
-    when: ansible_os_family =="Debian" 
+  - name: install java on Redhat node side 
+    yum:  
+      name: "{{myjavapackonRedHat}}"
+      state: present  
+    when: ansible_os_family =="RedHat" 
