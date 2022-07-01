@@ -10,5 +10,4 @@
       - git 
       - tree
       - wget
-
-      
+    tags: myMultitasks
